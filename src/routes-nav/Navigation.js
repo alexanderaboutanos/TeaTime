@@ -14,7 +14,7 @@ const Navigation = ({ logout }) => {
         <Nav.Link href="/wish-list">Wish List</Nav.Link>
         <Nav.Link href="/discover">Discover</Nav.Link>
         <Nav.Link href="/profile">Profile</Nav.Link>
-        <Nav.Link onClick={logout} href="/logout">
+        <Nav.Link onClick={logout} href="/">
           Logout
         </Nav.Link>
       </Nav>
@@ -25,7 +25,7 @@ const Navigation = ({ logout }) => {
     return (
       <Nav className="me-auto">
         <Nav.Link href="/login">Login</Nav.Link>
-        <Nav.Link href="/signout">Signup</Nav.Link>
+        <Nav.Link href="/signup">Signup</Nav.Link>
       </Nav>
     );
   }

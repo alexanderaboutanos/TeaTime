@@ -24,9 +24,7 @@ function Homepage() {
         <h1 className="mb-4 font-weight-bold">TeaTime</h1>
         <p className="lead">All the teas in one, convenient place.</p>
         {currentUser ? (
-          <h2>
-            Welcome Back, {currentUser.firstName || currentUser.username}!
-          </h2>
+          <h2>Welcome Back, {currentUser.first_name}!</h2>
         ) : (
           <p>
             <Link className="btn btn-primary font-weight-bold mr-3" to="/login">
