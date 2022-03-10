@@ -15,7 +15,11 @@ import Homepage from "../homepage/Homepage";
 import LoginForm from "../auth/LoginForm";
 import SignupForm from "../auth/SignupForm";
 
-const RouteList = () => {
+// See if you can add 'nested routes'
+// https://github.com/remix-run/react-router/blob/main/docs/getting-started/tutorial.md
+// what happens when a user visits an invalid page?
+
+const RouteList = ({ login, signup }) => {
   return (
     <Routes>
       {/* Add new tea */}
@@ -92,10 +96,10 @@ const RouteList = () => {
       <Route path="/" element={<Homepage />} />
 
       {/* Login/signup */}
-      <Route path="/login" element={<LoginForm />} />
+      <Route path="/login" element={<LoginForm login={login} />} />
 
       {/* Signup form */}
-      <Route path="/signup" element={<SignupForm />} />
+      <Route path="/signup" element={<SignupForm signup={signup} />} />
     </Routes>
   );
 };
