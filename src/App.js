@@ -37,9 +37,8 @@ function App() {
       async function getCurrentUser() {
         if (token) {
           try {
-            let { userId } = jwt.decode(token);
             TeaTimeApi.token = token;
-            let currentUser = await TeaTimeApi.getCurrentUser(userId);
+            let currentUser = await TeaTimeApi.getCurrentUser();
             setCurrentUser(currentUser);
           } catch (err) {
             console.error("App loadUserInfo: problem loading", err);

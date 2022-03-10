@@ -36,6 +36,12 @@ class TeaTimeApi {
 
   // ************** AUTH ROUTES  ******************
 
+  /** Get user data to be set in currentUser localStorage */
+  static async getCurrentUser() {
+    let res = await this.request("auth");
+    return res.user;
+  }
+
   /** Get token for login from username, password. */
   static async login(data) {
     let res = await this.request(`auth/token`, data, "post");
