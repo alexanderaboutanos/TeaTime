@@ -2,7 +2,6 @@
 
 import React, { useState, useEffect } from "react";
 import { BrowserRouter } from "react-router-dom";
-import jwt from "jsonwebtoken";
 
 import TeaTimeApi from "./api/teaTime.api";
 import UserContext from "./auth/UserContext";

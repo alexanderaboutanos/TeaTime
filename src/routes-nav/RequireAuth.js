@@ -1,14 +1,15 @@
 /** @format */
 
-// /** @format */
+import { useContext } from "react";
+import { Navigate } from "react-router-dom";
+import UserContext from "../auth/UserContext";
 
-// import { useContext } from "react";
-// import { Navigate } from "react-router-dom";
-// import AppContext from "./AppContext";
+const RequireAuth = ({ children }) => {
+  const { currentUser } = useContext(UserContext);
 
-// const RequireAuth = ({ children }) => {
-//   const { currentUser } = useContext(AppContext);
-//   return currentUser ? children : <Navigate to="/login" replace />;
-// };
+  console.debug("RequireAuth", "currentUser=", currentUser);
 
-// export default RequireAuth;
+  return currentUser ? children : <Navigate to="/login" replace />;
+};
+
+export default RequireAuth;

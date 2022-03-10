@@ -1,9 +1,9 @@
 /** @format */
 
-import React, { useContext } from "react";
-import { Link } from "react-router-dom";
+// import React, { useContext } from "react";
+// import { Link } from "react-router-dom";
 // import "./Homepage.css";
-import UserContext from "../auth/UserContext";
+// import UserContext from "../auth/UserContext";
 
 /** Homepage of site.
  *
