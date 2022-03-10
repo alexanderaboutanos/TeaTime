@@ -58,20 +58,14 @@ class TeaTimeApi {
 
   /** Get list of myTeas  */
   static async getMyTeas() {
-    let res = await this.request("teas/", {
-      is_my_tea: true,
-      is_on_wish_list: false,
-    });
+    let res = await this.request("teas/my-teas");
     return res.myTeaArr;
   }
 
   /** Get wishList of teas  */
   static async getWishList() {
-    let res = await this.request("teas/", {
-      is_my_tea: false,
-      is_on_wish_list: true,
-    });
-    return res.myTeaArr;
+    let res = await this.request("teas/wish-list");
+    return res.wishListArr;
   }
 
   /** create new Tea in DB (myTea or WishList) */
