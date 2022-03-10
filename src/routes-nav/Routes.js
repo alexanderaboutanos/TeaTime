@@ -2,42 +2,83 @@
 
 import React from "react";
 import { Route, Routes } from "react-router-dom";
+
+import RequireAuth from "../routes-nav/RequireAuth";
+import AddTea from "../teaForms/AddTea";
+import EditTea from "../teaForms/EditTea";
+import TeaDetail from "../tea/TeaDetail";
+import DiscoverTeaList from "../lists/DiscoverTeaList";
+import WishList from "../lists/WishList";
+import MyTeaList from "../lists/MyTeaList";
+import Profile from "../profile/Profile";
 import Homepage from "../homepage/Homepage";
+import LoginForm from "../auth/LoginForm";
+import SignupForm from "../auth/SignupForm";
 
 const RouteList = () => {
   return (
     <Routes>
-      {/* List all companies */}
+      {/* Add new tea */}
       <Route
-        path="/companies"
+        path="/tea/add"
         element={
           <RequireAuth>
-            <Companies />
+            <AddTea />
           </RequireAuth>
         }
       />
 
-      {/* View details of this company */}
+      {/* Edit tea details */}
       <Route
-        path="/companies/:handle"
+        path="/tea/edit/:id"
         element={
           <RequireAuth>
-            <Company />
+            <EditTea />
           </RequireAuth>
         }
       />
 
-      {/* List all jobs */}
+      {/* View details of individual tea */}
       <Route
-        path="/jobs"
+        path="/tea/:id"
         element={
           <RequireAuth>
-            <Jobs />
+            <TeaDetail />
           </RequireAuth>
         }
       />
 
-      {/* Edit profile page */}
+      {/* Discover New Teas (through Spoonacular) */}
+      <Route
+        path="/discover-new-teas"
+        element={
+          <RequireAuth>
+            <DiscoverTeaList />
+          </RequireAuth>
+        }
+      />
+
+      {/* List all teas in Wish List */}
+      <Route
+        path="/wish-list"
+        element={
+          <RequireAuth>
+            <WishList />
+          </RequireAuth>
+        }
+      />
+
+      {/* List all teas in MyTea List */}
+      <Route
+        path="/my-teas"
+        element={
+          <RequireAuth>
+            <MyTeaList />
+          </RequireAuth>
+        }
+      />
+
+      {/* View profile page */}
       <Route
         path="/profile"
         element={
@@ -51,10 +92,10 @@ const RouteList = () => {
       <Route path="/" element={<Homepage />} />
 
       {/* Login/signup */}
-      <Route path="/login" element={<Login />} />
+      <Route path="/login" element={<LoginForm />} />
 
       {/* Signup form */}
-      <Route path="/signup" element={<SignUpForm />} />
+      <Route path="/signup" element={<SignupForm />} />
     </Routes>
   );
 };
