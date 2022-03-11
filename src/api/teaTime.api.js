@@ -69,8 +69,22 @@ class TeaTimeApi {
   }
 
   /** create new Tea in DB (myTea or WishList) */
-  static async createNewTea(data) {
-    let res = await this.request("teas/new", data, "post");
+  static async createNewTeaAndAddToMyTeas(data) {
+    let res = await this.request(
+      "teas/new",
+      { ...data, is_my_tea: true, is_wish_list: false },
+      "post"
+    );
+    return res;
+  }
+
+  /** create new Tea in DB AND add it to WishList. */
+  static async createNewTeaAndAddToWishList(data) {
+    let res = await this.request(
+      "teas/new",
+      { ...data, is_my_tea: false, is_wish_list: true },
+      "post"
+    );
     return res;
   }
 
@@ -90,7 +104,17 @@ class TeaTimeApi {
 
   /** move a tea from Wish List to My Teas */
   static async moveFromWishListToMyTeas(teaId) {
-    let res = await this.request(`saved/teas/switch/${teaId}`, {}, "patch");
+    let res = await this.request(`saved/teas/to-my-teas/${teaId}`, {}, "patch");
+    return res;
+  }
+
+  /** move a tea from My Teas to WishList */
+  static async moveFromMyTeasToWishList(teaId) {
+    let res = await this.request(
+      `saved/teas/to-wish-list/${teaId}`,
+      {},
+      "patch"
+    );
     return res;
   }
 
