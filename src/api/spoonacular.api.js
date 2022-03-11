@@ -5,6 +5,7 @@ import axios from "axios";
 const BASE_URL = "https://api.spoonacular.com/food/products";
 
 const SPOONACULAR_API_KEY = process.env.apiKey;
+// const SPOONACULAR_API_KEY = "d75e0892d04a44c98b0bd3a78ec5ae28";
 
 /** Tea Time API Class.
  *
@@ -29,7 +30,28 @@ class SpoonacularApi {
     }
   }
 
-  // Individual API Routes
+  /** ************** HELPER FUNCTIONS *********************** */
+
+  // filter to remove excess data from Spoonacular API
+  static filterTeas(arr) {
+    // remove non-teas
+    const filter1 = arr.products.filter((i) => {
+      return i.aisle === "Tea and Coffee";
+    });
+    // remove unecessary keys
+    const filter2 = filter1.map((t) => {
+      return {
+        id: t.id,
+        title: t.title,
+        brand: t.brand,
+        description: t.description,
+        img_url: t.image,
+      };
+    });
+    return filter2;
+  }
+
+  // *****************  Individual API Routes *******************
 
   /** get details on individual product */
   static async getIndividualTeaData(spoonacularProductId) {
@@ -39,11 +61,13 @@ class SpoonacularApi {
 
   /** search all teas, include a 'query' */
   static async searchAllTeas(query) {
+    console.debug("API, searchAllTeas, query: ", query);
     if (query === undefined || query === "") query = "tea";
-    if (!query.includes("tea")) query += " tea";
+    else if (!query.includes("tea")) query += " tea";
     const data = { query, number: 2, addProductInformation: true };
     const res = await this.request("search", data, "get");
-    return res;
+    const filteredResponse = this.filterTeas(res);
+    return filteredResponse;
   }
 }
 
