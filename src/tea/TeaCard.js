@@ -2,7 +2,31 @@
 
 import { Col, Card, Button } from "react-bootstrap";
 
-const TeaCard = ({ id, title, brand, img_url, description }) => {
+const TeaCard = ({
+  id,
+  title,
+  brand,
+  img_url,
+  description,
+  origin,
+  btn1,
+  btn2,
+}) => {
+  let btn1Txt;
+  let btn2Txt;
+  if (origin === "DiscoverTeaList") {
+    btn1Txt = "+ wish list";
+    btn2Txt = "+ my teas";
+  }
+  if (origin === "MyTeaList") {
+    btn1Txt = "+ wish list";
+    btn2Txt = "delete tea";
+  }
+  if (origin === "WishList") {
+    btn1Txt = "+ my teas";
+    btn2Txt = "delete tea";
+  }
+
   return (
     <Col>
       <Card id={id}>
@@ -14,11 +38,11 @@ const TeaCard = ({ id, title, brand, img_url, description }) => {
         </Card.Body>
         <Card.Body>
           <>
-            <Button size="sm" variant="primary">
-              MyTea
+            <Button onClick={() => btn1(id)} size="sm" variant="primary">
+              {btn1Txt}
             </Button>
-            <Button size="sm" variant="primary">
-              WishList
+            <Button onClick={() => btn2(id)} size="sm" variant="primary">
+              {btn2Txt}
             </Button>
           </>
         </Card.Body>

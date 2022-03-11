@@ -82,11 +82,40 @@ function App() {
     setToken(null);
   }
 
+  /** deleteTea */
+  async function deleteTea(id) {
+    console.debug("debug deleteTea, id: ", id);
+    const res = await TeaTimeApi.deleteTea(id);
+    console.debug("res", res);
+  }
+
+  /** addToMyTeas */
+  async function addToMyTeas(id) {
+    console.debug("debug deleteTea, id: ", id);
+    const res = await TeaTimeApi.deleteTea(id);
+    console.debug("res", res);
+  }
+
+  /** addToWishList */
+  async function addToWishList(id) {
+    console.debug("debug deleteTea, id: ", id);
+    const res = await TeaTimeApi.deleteTea(id);
+    console.debug("res", res);
+  }
+
   if (!infoLoaded) return <LoadingSpinner />;
 
   return (
     <BrowserRouter>
-      <UserContext.Provider value={{ currentUser, setCurrentUser }}>
+      <UserContext.Provider
+        value={{
+          currentUser,
+          setCurrentUser,
+          deleteTea,
+          addToMyTeas,
+          addToWishList,
+        }}
+      >
         <div className="App">
           <Navigation logout={logout} />
           <Routes login={login} signup={signup} />

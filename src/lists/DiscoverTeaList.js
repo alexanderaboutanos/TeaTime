@@ -1,13 +1,15 @@
 /** @format */
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 import SpoonacularApi from "../api/spoonacular.api";
 import SearchTea from "../teaForms/SearchTea";
 import LoadingSpinner from "../common/LoadingSpinner";
 import TeaCardList from "../tea/TeaCardList";
+import UserContext from "../auth/UserContext";
 
 const DiscoverTeaList = () => {
   console.debug("DiscoverTeaList");
+  const { addToWishList, addToMyTeas } = useContext(UserContext);
 
   const [teas, setTeas] = useState(null);
 
@@ -30,6 +32,16 @@ const DiscoverTeaList = () => {
     setTeas(filteredTeas);
   }
 
+  async function handleAddToWishList(id) {
+    addToWishList(id);
+    alert("added to wish list!");
+  }
+
+  async function handleAddToMyTeas(id) {
+    addToMyTeas(id);
+    alert("added to my teas!");
+  }
+
   // The following object keys need to be changed...
   // "title" --> "title"
   // "brand" --> "brand"
@@ -43,7 +55,12 @@ const DiscoverTeaList = () => {
       <h3>Discover new teas!</h3>
       <SearchTea searchFor={search} />
       {teas.length ? (
-        <TeaCardList teas={teas} fromSpoonDb={true} />
+        <TeaCardList
+          teas={teas}
+          btn1={handleAddToWishList}
+          btn2={handleAddToMyTeas}
+          origin={"DiscoverTeaList"}
+        />
       ) : (
         <p className="lead">I'm sorry, your search appears inconclusive!</p>
       )}
