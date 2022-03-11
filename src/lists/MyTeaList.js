@@ -26,7 +26,7 @@ const MyTeaList = () => {
     <div className="MyTeaList col-md-8 offset-md-2">
       <h3>My Tea List</h3>
       {teas.length ? (
-        <TeaCardList teas={teas} />
+        <TeaCardList teas={teas} fromSpoonDb={false} />
       ) : (
         <p className="lead">I'm sorry, you appear to have no saved tea!</p>
       )}

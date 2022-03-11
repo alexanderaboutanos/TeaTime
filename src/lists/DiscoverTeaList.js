@@ -43,7 +43,7 @@ const DiscoverTeaList = () => {
       <h3>Discover new teas!</h3>
       <SearchTea searchFor={search} />
       {teas.length ? (
-        <TeaCardList teas={teas} />
+        <TeaCardList teas={teas} fromSpoonDb={true} />
       ) : (
         <p className="lead">I'm sorry, your search appears inconclusive!</p>
       )}

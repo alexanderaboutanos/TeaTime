@@ -26,7 +26,7 @@ const WishList = () => {
     <div className="WishList col-md-8 offset-md-2">
       <h3>Wish List</h3>
       {teas.length ? (
-        <TeaCardList teas={teas} />
+        <TeaCardList teas={teas} fromSpoonDb={false} />
       ) : (
         <p className="lead">Your wish list appears to be empty!</p>
       )}
