@@ -4,7 +4,7 @@ import axios from "axios";
 
 const BASE_URL = "https://api.spoonacular.com/food/products";
 
-const SPOONACULAR_AUTH_TOKEN = "##############";
+const SPOONACULAR_API_KEY = process.env.apiKey;
 
 /** Tea Time API Class.
  *
@@ -15,11 +15,10 @@ const SPOONACULAR_AUTH_TOKEN = "##############";
 
 class SpoonacularApi {
   static async request(endpoint, data = {}, method = "get") {
-    console.debug("API Call:", endpoint, data, method);
-
     const url = `${BASE_URL}/${endpoint}`;
-    const headers = { apiKey: `${SPOONACULAR_AUTH_TOKEN}` };
-    const params = method === "get" ? data : {};
+    const headers = {};
+    const params = { ...data, apiKey: SPOONACULAR_API_KEY };
+    console.debug("API Call:", url, headers, params, method);
 
     try {
       return (await axios({ url, method, data, params, headers })).data;
@@ -40,11 +39,12 @@ class SpoonacularApi {
 
   /** search all teas, include a 'query' */
   static async searchAllTeas(query) {
-    if (query.indexOf("tea") === -1) return "must include the word 'tea'";
-    const data = { query, number: 30, addProductionInformation: true };
+    if (query === undefined || query === "") query = "tea";
+    if (!query.includes("tea")) query += " tea";
+    const data = { query, number: 2, addProductInformation: true };
     const res = await this.request("search", data, "get");
     return res;
   }
 }
 
-modules.export = SpoonacularApi;
+export default SpoonacularApi;

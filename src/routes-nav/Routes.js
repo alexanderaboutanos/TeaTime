@@ -54,7 +54,7 @@ const RouteList = ({ login, signup }) => {
 
       {/* Discover New Teas (through Spoonacular) */}
       <Route
-        path="/discover-new-teas"
+        path="/discover"
         element={
           <RequireAuth>
             <DiscoverTeaList />
