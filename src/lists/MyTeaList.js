@@ -1,14 +1,12 @@
 /** @format */
 
-import { useState, useEffect, useContext } from "react";
+import { useState, useEffect } from "react";
 import TeaTimeApi from "../api/teaTime.api";
 import LoadingSpinner from "../common/LoadingSpinner";
 import TeaCardList from "../tea/TeaCardList";
-import UserContext from "../auth/UserContext";
 
 const MyTeaList = () => {
   console.debug("MyTeaList");
-  const { addToWishList, deleteTea } = useContext(UserContext);
   const [teas, setTeas] = useState(null);
 
   async function getMyTeas() {
@@ -23,12 +21,16 @@ const MyTeaList = () => {
   }, []);
 
   async function handleAddToWishList(id) {
-    await addToWishList(id);
+    console.debug("debug deleteTea, id: ", id);
+    const res = await TeaTimeApi.moveFromMyTeasToWishList(id);
+    console.debug("res", res);
     getMyTeas();
   }
 
   async function handleDeleteTea(id) {
-    await deleteTea(id);
+    console.debug("debug deleteTea, id: ", id);
+    const res = await TeaTimeApi.deleteTea(id);
+    console.debug("res", res);
     getMyTeas();
   }
 
