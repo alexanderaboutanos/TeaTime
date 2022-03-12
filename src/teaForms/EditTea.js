@@ -11,7 +11,7 @@ import { Button } from "react-bootstrap";
  * Shows form and manages update to state on changes.
  * On submission:
  * - calls signup function prop
- * - redirects to /companies route
+ * - redirects to / route
  *
  * Routes -> EditTea -> Alert
  * Routed as /signup
@@ -37,7 +37,6 @@ function EditTea() {
   useEffect(() => {
     async function getTeaDataOnMount() {
       const tea = await TeaTimeApi.getTeaInfo(id);
-      console.log(tea);
       setFormData(tea);
     }
     getTeaDataOnMount();
@@ -65,7 +64,6 @@ function EditTea() {
 
   /** Update form data field */
   function handleChange(evt) {
-    console.log("EVT: ", evt);
     const target = evt.target;
     let value;
     if (target.type === "checkbox") value = target.checked;

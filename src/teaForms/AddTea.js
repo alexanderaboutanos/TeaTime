@@ -11,7 +11,7 @@ import Alert from "../common/Alert";
  * Shows form and manages update to state on changes.
  * On submission:
  * - calls signup function prop
- * - redirects to /companies route
+ * - redirects to / route
  *
  * Routes -> AddNewTea -> Alert
  * Routed as /signup
@@ -60,7 +60,6 @@ function AddNewTea() {
 
   /** Update form data field */
   function handleChange(evt) {
-    console.log("EVT: ", evt);
     const target = evt.target;
     let value;
     if (target.type === "checkbox") value = target.checked;

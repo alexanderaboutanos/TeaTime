@@ -4,7 +4,7 @@ import React from "react";
 
 /** Presentational component for showing bootstrap-style alerts.
  *
- * { LoginForm, SignupForm } -> Alert
+ * { LoginForm, SignupForm, AddTea, EditTea } -> Alert
  **/
 
 function Alert({ type = "danger", messages = [] }) {

@@ -14,6 +14,7 @@ import Profile from "../profile/Profile";
 import Homepage from "../homepage/Homepage";
 import LoginForm from "../auth/LoginForm";
 import SignupForm from "../auth/SignupForm";
+import HelpPage from "../homepage/HelpPage";
 
 // See if you can add 'nested routes'
 // https://github.com/remix-run/react-router/blob/main/docs/getting-started/tutorial.md
@@ -94,6 +95,9 @@ const RouteList = ({ login, signup }) => {
 
       {/* Homepage — just a simple welcome message */}
       <Route path="/" element={<Homepage />} />
+
+      {/* Help Page — explanation of how the app works */}
+      <Route path="/help" element={<HelpPage />} />
 
       {/* Login/signup */}
       <Route path="/login" element={<LoginForm login={login} />} />

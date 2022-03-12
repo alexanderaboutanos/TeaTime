@@ -13,7 +13,6 @@ const WishList = () => {
     console.debug("WishList getWishList");
     const wishList = await TeaTimeApi.getWishList();
     setTeas(wishList);
-    console.log(wishList);
   }
 
   useEffect(() => {

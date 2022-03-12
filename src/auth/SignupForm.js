@@ -6,13 +6,14 @@ import React, { useState } from "react";
 import Alert from "../common/Alert";
 import { useNavigate } from "react-router-dom";
 import "./SignupForm.css";
+import Background from "../common/Background";
 
 /** Signup form.
  *
  * Shows form and manages update to state on changes.
  * On submission:
  * - calls signup function prop
- * - redirects to /companies route
+ * - redirects to / route
  *
  * Routes -> SignupForm -> Alert
  * Routed as /signup
@@ -40,7 +41,7 @@ function SignupForm({ signup }) {
 
   /** Handle form submit:
    *
-   * Calls login func prop and, if successful, redirect to /companies.
+   * Calls login func prop and, if successful, redirect to /s.
    */
 
   async function handleSubmit(evt) {
@@ -61,7 +62,11 @@ function SignupForm({ signup }) {
 
   return (
     <div className="SignupForm">
-      <div className="container col-md-6 offset-md-3 col-lg-4 offset-lg-4">
+      <Background />
+      <div
+        className="container col-md-6 offset-md-3 col-lg-4 offset-lg-4"
+        style={{ zIndex: 2 }}
+      >
         <h2 className="mb-3">Sign Up</h2>
         <div className="card">
           <div className="card-body">

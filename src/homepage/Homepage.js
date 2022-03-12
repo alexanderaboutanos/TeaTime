@@ -4,6 +4,7 @@ import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import "./Homepage.css";
 import UserContext from "../auth/UserContext";
+import Background from "../common/Background";
 
 /** Homepage of site.
  *
@@ -20,11 +21,12 @@ function Homepage() {
 
   return (
     <div className="Homepage">
-      <div className="container text-center">
+      <Background />
+      <div className="container text-center" style={{ zIndex: 100 }}>
         <h1 className="mb-4 font-weight-bold">TeaTime</h1>
         <p className="lead">All the teas in one, convenient place.</p>
         {currentUser ? (
-          <h2>Welcome Back, {currentUser.first_name}!</h2>
+          <h3>Welcome back, {currentUser.first_name}!</h3>
         ) : (
           <p>
             <Link className="btn btn-primary font-weight-bold mr-3" to="/login">

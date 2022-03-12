@@ -2,7 +2,6 @@
 
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import SpoonacularApi from "../api/spoonacular.api";
 import SearchTea from "../teaForms/SearchTea";
 import LoadingSpinner from "../common/LoadingSpinner";
 import TeaCardList from "../tea/TeaCardList";
@@ -13,6 +12,7 @@ const DiscoverTeaList = () => {
   const navigate = useNavigate();
   const [teas, setTeas] = useState(null);
 
+  // used in testing.
   const fakeArrData = [
     {
       id: 740259,
@@ -58,7 +58,7 @@ const DiscoverTeaList = () => {
   }
 
   async function handleAddToMyTeas(id) {
-    console.log("handleAddToMyTeas", id);
+    console.debug("handleAddToMyTeas", id);
     const tea = teas.filter((t) => t.id === id);
     const targetTea = tea[0];
     delete targetTea.id;

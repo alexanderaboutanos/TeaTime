@@ -4,8 +4,6 @@ import { Row } from "react-bootstrap";
 import TeaCard from "../tea/TeaCard";
 
 const TeaCardList = ({ teas, origin, btn1, btn2 }) => {
-  console.log(teas);
-
   return (
     <Row xs={1} md={4} className="TeaCardList g-4">
       {teas.map((tea) => (

@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Alert from "../common/Alert";
 import "./LoginForm.css";
+import Background from "../common/Background";
 
 /** Login form.
  *
@@ -57,7 +58,11 @@ function LoginForm({ login }) {
 
   return (
     <div className="LoginForm">
-      <div className="container col-md-6 offset-md-3 col-lg-4 offset-lg-4">
+      <Background />
+      <div
+        className="container col-md-6 offset-md-3 col-lg-4 offset-lg-4"
+        style={{ zIndex: 2 }}
+      >
         <h3 className="mb-3">Log In</h3>
 
         <div className="card">
