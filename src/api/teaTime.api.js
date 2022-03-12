@@ -56,6 +56,12 @@ class TeaTimeApi {
 
   // ************** TEA ROUTES  ******************
 
+  /** Get information about a single tea  */
+  static async getTeaInfo(id) {
+    let res = await this.request(`teas/${id}`);
+    return res.tea;
+  }
+
   /** Get list of myTeas  */
   static async getMyTeas() {
     let res = await this.request("teas/my-teas");
