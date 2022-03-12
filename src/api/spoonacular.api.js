@@ -4,8 +4,8 @@ import axios from "axios";
 
 const BASE_URL = "https://api.spoonacular.com/food/products";
 
-const SPOONACULAR_API_KEY = process.env.apiKey;
-// const SPOONACULAR_API_KEY = "d75e0892d04a44c98b0bd3a78ec5ae28";
+// const SPOONACULAR_API_KEY = process.env.apiKey;
+const SPOONACULAR_API_KEY = "d75e0892d04a44c98b0bd3a78ec5ae28";
 
 /** Tea Time API Class.
  *
@@ -64,7 +64,7 @@ class SpoonacularApi {
     console.debug("API, searchAllTeas, query: ", query);
     if (query === undefined || query === "") query = "tea";
     else if (!query.includes("tea")) query += " tea";
-    const data = { query, number: 2, addProductInformation: true };
+    const data = { query, number: 8, addProductInformation: true };
     const res = await this.request("search", data, "get");
     const filteredResponse = this.filterTeas(res);
     return filteredResponse;

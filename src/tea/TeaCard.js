@@ -1,6 +1,7 @@
 /** @format */
 
 import { Col, Card, Button } from "react-bootstrap";
+import { useNavigate } from "react-router-dom";
 
 const TeaCard = ({
   id,
@@ -27,11 +28,25 @@ const TeaCard = ({
     btn2Txt = "delete tea";
   }
 
+  const navigate = useNavigate();
+
+  function handleClick(id) {
+    navigate(`/tea/${id}`, { replace: true });
+  }
+
   return (
     <Col>
       <Card id={id}>
-        <Card.Img variant="top" src={img_url} />
-        <Card.Body>
+        <Card.Img
+          style={{ cursor: "pointer" }}
+          onClick={() => handleClick(id)}
+          variant="top"
+          src={img_url}
+        />
+        <Card.Body
+          style={{ cursor: "pointer" }}
+          onClick={() => handleClick(id)}
+        >
           <Card.Title>{title}</Card.Title>
           <Card.Text>{brand}</Card.Text>
           <Card.Text>{description}</Card.Text>
