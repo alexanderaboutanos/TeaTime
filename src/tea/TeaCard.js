@@ -31,7 +31,7 @@ const TeaCard = ({
   const navigate = useNavigate();
 
   function handleClick(id) {
-    navigate(`/tea/${id}`, { replace: true });
+    if (origin !== "DiscoverTeaList") navigate(`/tea/${id}`, { replace: true });
   }
 
   return (
