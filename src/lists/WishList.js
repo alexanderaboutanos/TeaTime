@@ -38,7 +38,7 @@ const WishList = () => {
 
   return (
     <div className="WishList col-md-8 offset-md-2">
-      <h3>Wish List</h3>
+      <h2 style={{ margin: "25px" }}>Wish List</h2>
       {teas.length ? (
         <TeaCardList
           teas={teas}

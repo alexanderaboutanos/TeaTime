@@ -7,7 +7,7 @@ const Profile = () => {
   const { currentUser } = useContext(UserContext);
   return (
     <div>
-      <h2>My Account</h2>
+      <h2 style={{ margin: "25px" }}>My Account</h2>
       <p>
         <b>Username:</b> {currentUser.username}
       </p>

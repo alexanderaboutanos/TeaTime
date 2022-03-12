@@ -4,8 +4,8 @@ import axios from "axios";
 
 const BASE_URL = "https://api.spoonacular.com/food/products";
 
-// const SPOONACULAR_API_KEY = process.env.apiKey;
-const SPOONACULAR_API_KEY = "d75e0892d04a44c98b0bd3a78ec5ae28";
+const SPOONACULAR_API_KEY = process.env.apiKey;
+// const SPOONACULAR_API_KEY = "d75e0892d04a44c98b0bd3a78ec5ae28";
 
 /** Tea Time API Class.
  *

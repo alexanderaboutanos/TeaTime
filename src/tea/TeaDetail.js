@@ -5,6 +5,7 @@ import { useParams } from "react-router-dom";
 import { Card, Button } from "react-bootstrap";
 import TeaTimeApi from "../api/teaTime.api";
 import LoadingSpinner from "../common/LoadingSpinner";
+import "./TeaDetail.css";
 
 const TeaDetail = () => {
   const { id } = useParams();
@@ -29,7 +30,7 @@ const TeaDetail = () => {
         <Card.Title>
           <h1>{tea.title}</h1>
         </Card.Title>
-        <Card.Img roundedCircle={true} src={tea.img_url}></Card.Img>
+        <Card.Img className="tea-detail-img" src={tea.img_url}></Card.Img>
         <Card.Text>
           <b>Brand:</b> {tea.brand}
         </Card.Text>

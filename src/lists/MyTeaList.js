@@ -39,8 +39,12 @@ const MyTeaList = () => {
 
   return (
     <div className="MyTeaList col-md-8 offset-md-2">
-      <h3>My Tea List</h3>
-      <Button href="/tea/add" variant="outline-secondary">
+      <h2 style={{ margin: "20px" }}>My Tea List</h2>
+      <Button
+        href="/tea/add"
+        variant="outline-secondary"
+        style={{ marginBottom: "20px" }}
+      >
         Add New Tea
       </Button>
       {teas.length ? (
