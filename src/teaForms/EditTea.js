@@ -56,7 +56,7 @@ function EditTea() {
       if (formData.img_url === "") formData.img_url = null;
       await TeaTimeApi.editTea(id, formData);
       alert("edited your tea!");
-      navigate("/my-teas", { replace: true });
+      navigate(`/tea/${id}`, { replace: true });
     } catch (errors) {
       setFormErrors(errors);
     }
