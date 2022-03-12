@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import TeaTimeApi from "../api/teaTime.api";
 import LoadingSpinner from "../common/LoadingSpinner";
 import TeaCardList from "../tea/TeaCardList";
+import { Button } from "react-bootstrap";
 
 const MyTeaList = () => {
   console.debug("MyTeaList");
@@ -39,6 +40,9 @@ const MyTeaList = () => {
   return (
     <div className="MyTeaList col-md-8 offset-md-2">
       <h3>My Tea List</h3>
+      <Button href="/tea/add" variant="outline-secondary">
+        Add New Tea
+      </Button>
       {teas.length ? (
         <TeaCardList
           teas={teas}

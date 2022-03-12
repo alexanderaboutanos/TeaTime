@@ -75,7 +75,7 @@ class TeaTimeApi {
       { ...data, is_my_tea: true, is_wish_list: false },
       "post"
     );
-    return res;
+    return { success: true };
   }
 
   /** create new Tea in DB AND add it to WishList. */
