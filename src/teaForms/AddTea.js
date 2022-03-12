@@ -48,9 +48,7 @@ function AddNewTea() {
   async function handleSubmit(evt) {
     evt.preventDefault();
     try {
-      if (formData.img_url === "") delete formData.img_url;
-      if (formData.brew_time === null) delete formData.brew_time;
-      if (formData.brew_temp === null) delete formData.brew_temp;
+      if (formData.img_url === "") formData.img_url = null;
       await TeaTimeApi.createNewTeaAndAddToMyTeas(formData);
       alert("created a new tea!");
       navigate("/my-teas", { replace: true });
@@ -81,6 +79,7 @@ function AddNewTea() {
               <div className="form-group">
                 <label>Title</label>
                 <input
+                  placeholder="required"
                   name="title"
                   className="form-control"
                   value={formData.title}
@@ -90,6 +89,7 @@ function AddNewTea() {
               <div className="form-group">
                 <label>Brand</label>
                 <input
+                  placeholder="required"
                   name="brand"
                   className="form-control"
                   value={formData.brand}
@@ -99,6 +99,7 @@ function AddNewTea() {
               <div className="form-group">
                 <label>Description</label>
                 <input
+                  placeholder="required"
                   name="description"
                   className="form-control"
                   value={formData.description}

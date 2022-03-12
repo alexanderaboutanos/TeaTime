@@ -53,9 +53,7 @@ function EditTea() {
     evt.preventDefault();
     try {
       delete formData.id;
-      if (formData.img_url === "") delete formData.img_url;
-      if (formData.brew_time === null) delete formData.brew_time;
-      if (formData.brew_temp === null) delete formData.brew_temp;
+      if (formData.img_url === "") formData.img_url = null;
       await TeaTimeApi.editTea(id, formData);
       alert("edited your tea!");
       navigate("/my-teas", { replace: true });
