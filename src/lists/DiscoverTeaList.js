@@ -36,11 +36,11 @@ const DiscoverTeaList = () => {
 
   /** Triggered by search form submit; reloads teas. */
   async function search(query) {
-    // console.debug("DiscoverTeaList, search: ", query);
-    // const res = await SpoonacularApi.searchAllTeas(query["search"]);
-    // console.debug("DiscoverTeaList, res: ", res);
-    // setTeas(res);
-    setTeas(fakeArrData);
+    console.debug("DiscoverTeaList, search: ", query);
+    const res = await SpoonacularApi.searchAllTeas(query["search"]);
+    console.debug("DiscoverTeaList, res: ", res);
+    setTeas(res);
+    // setTeas(fakeArrData);
   }
 
   useEffect(() => {
