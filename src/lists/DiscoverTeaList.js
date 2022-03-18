@@ -5,6 +5,7 @@ import { useNavigate } from "react-router-dom";
 import SearchTea from "../teaForms/SearchTea";
 import LoadingSpinner from "../common/LoadingSpinner";
 import TeaCardList from "../tea/TeaCardList";
+import SpoonacularApi from "../api/spoonacular.api";
 import TeaTimeApi from "../api/teaTime.api";
 
 const DiscoverTeaList = () => {
