@@ -219,7 +219,7 @@ function AddNewTea() {
                 size="lg"
                 onSubmit={handleSubmit}
               >
-                Make New Tea!
+                Brew!
               </Button>
             </form>
           </div>

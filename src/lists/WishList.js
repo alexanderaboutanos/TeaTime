@@ -37,7 +37,7 @@ const WishList = () => {
 
   return (
     <div className="WishList col-md-8 offset-md-2">
-      <h2 style={{ margin: "25px" }}>Wish List</h2>
+      <h2 style={{ margin: "25px" }}>Wishlist</h2>
       {teas.length ? (
         <TeaCardList
           teas={teas}
@@ -46,7 +46,7 @@ const WishList = () => {
           origin={"WishList"}
         />
       ) : (
-        <p className="lead">Your wish list appears to be empty!</p>
+        <p className="lead">Your wishlist appears to be empty!</p>
       )}
     </div>
   );

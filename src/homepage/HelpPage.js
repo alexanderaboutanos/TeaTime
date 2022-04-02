@@ -1,7 +1,6 @@
 /** @format */
 
-import { Container, Tab, Tabs, Card } from "react-bootstrap";
-import Profile from "../profile/Profile";
+import { Container, Tab, Tabs } from "react-bootstrap";
 
 const HelpPage = () => {
   return (
@@ -10,6 +9,7 @@ const HelpPage = () => {
         TeaTime Help Page
       </h2>
       <img
+        alt="coffee mug"
         style={{ height: "200px" }}
         thumbnail={true}
         src="https://bycooper.com/wp-content/uploads/2021/03/white-glossy-mug-11oz-handle-on-left-6056aa04aae9a.png"
@@ -35,7 +35,7 @@ const HelpPage = () => {
                 <li>
                   Αfter creating your own personal account, you can keep track
                   of your teas, browse a huge database of to discover new teas,
-                  and construct your very own wish list!
+                  and construct your very own wishlist!
                 </li>
                 <br></br>
                 <li>
@@ -106,9 +106,9 @@ const HelpPage = () => {
                   to manually enter details of the tea that you own.
                 </li>
                 <li>
-                  <b>Add to Wish List</b> - Each tea can be removed from the My
-                  Teas list and added to the Wish List by simply clicking on the
-                  "+ wish list" button.
+                  <b>Add to Wishlist</b> - Each tea can be removed from the My
+                  Teas list and added to the Wishlist by simply clicking on the
+                  "move to wishlist" button.
                 </li>
                 <li>
                   <b>Delete Tea</b> - Conversely, you may delete any tea on this
@@ -130,7 +130,7 @@ const HelpPage = () => {
                 <li>
                   TeaTime gives users the option to discover new teas by
                   searching a huge database. You can even add teas to your
-                  WishList or MyTeas.
+                  Wishlist or MyTeas.
                 </li>
                 <li>
                   Click on the <b>Discover</b> tab, to access the page.
@@ -147,8 +147,8 @@ const HelpPage = () => {
                   database of teas.
                 </li>
                 <li>
-                  <b>Add to Wish List</b> - Found a tea that you are interested
-                  in? Click to add it to your wish list.
+                  <b>Add to Wishlist</b> - Found a tea that you are interested
+                  in? Click to add it to your wishlist.
                 </li>
                 <li>
                   <b>Add to My Teas</b> - Do you already own this tea? Add it to
@@ -156,13 +156,13 @@ const HelpPage = () => {
                 </li>
               </ul>
             </Tab>
-            <Tab eventKey="wishList" title="Wish List">
+            <Tab eventKey="wishList" title="Wishlist">
               <ul style={{ textAlign: "left" }}>
                 <li>
                   With TeaTime, you can store teas you hope to one day own!
                 </li>
                 <li>
-                  Click on the <b>Wish List</b> tab, to access the page.
+                  Click on the <b>Wishlist</b> tab, to access the page.
                 </li>
                 <br></br>
                 <li>
