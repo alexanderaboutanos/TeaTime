@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="Homepage"
+  >
+    <img
+      alt="teacup"
+      src="https://images.unsplash.com/photo-1503933190776-da31c7700f80?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3307&q=80"
+      style="height: 100%; width: 100%; position: absolute; z-index: 1;"
+    />
+    <div
+      class="container text-center"
+      style="z-index: 100;"
+    >
+      <h1
+        class="mb-4 font-weight-bold"
+      >
+        TeaTime
+      </h1>
+      <p
+        class="lead"
+      >
+        All the teas in one, convenient place.
+      </p>
+      <h3>
+        Welcome back, Test!
+      </h3>
+    </div>
+  </div>
+</DocumentFragment>
+`;
