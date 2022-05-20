@@ -9,11 +9,11 @@ const SearchTea = ({ search }) => {
   /** Send {name, quantity} to parent
    *    & clear form. */
 
-  const handleSubmit = (evt) => {
+  async function handleSubmit(evt) {
     evt.preventDefault();
     search(formData);
     setFormData(INITIAL_STATE);
-  };
+  }
 
   /** Update local state w/curr state of input elem */
 
@@ -40,7 +40,9 @@ const SearchTea = ({ search }) => {
           value={formData.search}
           onChange={handleChange}
         />
-        <Button style={{ marginBottom: "15px" }}>Search</Button>
+        <Button onSubmit={handleSubmit} style={{ marginBottom: "15px" }}>
+          Search
+        </Button>
       </form>
     </div>
   );
