@@ -1,0 +1,88 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="App"
+  >
+    <nav
+      class="navbar navbar-expand navbar-dark bg-dark"
+      style="z-index: 2;"
+    >
+      <div
+        class="container"
+      >
+        <a
+          class="navbar-brand"
+          href="/"
+        >
+          TeaTime
+        </a>
+        <div
+          class="me-auto navbar-nav"
+        >
+          <a
+            class="nav-link"
+            data-rr-ui-event-key="/login"
+            href="/login"
+          >
+            Login
+          </a>
+          <a
+            class="nav-link"
+            data-rr-ui-event-key="/signup"
+            href="/signup"
+          >
+            Signup
+          </a>
+          <a
+            class="nav-link"
+            data-rr-ui-event-key="/help"
+            href="/help"
+          >
+            Help
+          </a>
+        </div>
+      </div>
+    </nav>
+    <div
+      class="Homepage"
+    >
+      <img
+        alt="teacup"
+        src="https://images.unsplash.com/photo-1503933190776-da31c7700f80?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3307&q=80"
+        style="height: 100%; width: 100%; position: absolute; z-index: 1;"
+      />
+      <div
+        class="container text-center"
+        style="z-index: 100;"
+      >
+        <h1
+          class="mb-4 font-weight-bold"
+        >
+          TeaTime
+        </h1>
+        <p
+          class="lead"
+        >
+          All the teas in one, convenient place.
+        </p>
+        <p>
+          <a
+            class="btn btn-primary font-weight-bold mr-3"
+            href="/login"
+          >
+            Log in
+          </a>
+          <a
+            class="btn btn-primary font-weight-bold"
+            href="/signup"
+          >
+            Sign up
+          </a>
+        </p>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

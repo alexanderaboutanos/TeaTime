@@ -30,7 +30,7 @@ exports[`matches snapshot 1`] = `
           data-rr-ui-event-key="/wish-list"
           href="/wish-list"
         >
-          Wish List
+          Wishlist
         </a>
         <a
           class="nav-link"

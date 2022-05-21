@@ -1,0 +1,104 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="TeaCardList g-4 row row-cols-md-4 row-cols-1"
+  >
+    <div
+      class="col"
+    >
+      <div
+        class="h-100 card"
+        id="740259"
+      >
+        <img
+          class="card-img-top"
+          src="https://spoonacular.com/productImages/740259-312x231.jpeg"
+          style="cursor: pointer;"
+        />
+        <div
+          class="bg-light card-body"
+          style="cursor: pointer;"
+        >
+          <div
+            class="text-truncate card-title h5"
+          >
+            Tea Sampler - Fruit Tea - Antioxidants Tea - Rooibos Tea - 100% Natural - Decaffeinated - Blueberry Tea - Peach Tea - Raspberry Tea - Loose Leaf Tea
+          </div>
+          <p
+            class="card-text"
+          >
+            Chinese Tea Culture
+          </p>
+          <p
+            class="crop-text-2 card-text"
+          >
+            Tea Sampler - Fruit Tea - Antioxidants Tea - Rooibos Tea - 100% Natural - Decaffeinated - Blueberry Tea - Peach Tea - Raspberry Tea - Loose Leaf Tea
+          </p>
+        </div>
+        <div
+          class="card-footer"
+        >
+          <button
+            class="btn btn-primary btn-sm"
+            style="margin: 3px;"
+            type="button"
+          />
+          <button
+            class="btn btn-primary btn-sm"
+            type="button"
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      class="col"
+    >
+      <div
+        class="h-100 card"
+        id="1539729"
+      >
+        <img
+          class="card-img-top"
+          src="https://spoonacular.com/productImages/1539729-312x231.jpeg"
+          style="cursor: pointer;"
+        />
+        <div
+          class="bg-light card-body"
+          style="cursor: pointer;"
+        >
+          <div
+            class="text-truncate card-title h5"
+          >
+            Tea Forte Lotus Relaxing Teas Presentation Box Tea Sampler Gift Set, 20 Assorted Variety Handcrafted Pyramid Tea Infuser Bags, Black Tea, Green Tea, Oolong Tea, White Tea, Herbal Tea
+          </div>
+          <p
+            class="card-text"
+          >
+            Tea Forte
+          </p>
+          <p
+            class="crop-text-2 card-text"
+          >
+            LOTUS COLLECTION, a curated assortment of five relaxing hot teas for mind, body & spirit - a unique and unprecedented gourmet collection of highest-grade, small-lot, certified organic teas: Vanilla Pear, Orange Jasmine, Mountain Oolong, Darjeeling Quince, Lemon Lavender DIVERSE, SUBTLE FLAVORS from only the finest whole tea leaves in the world, blended with aromatic fruits, flowers and herbs DELIGHTFUL TEA GIFT SET offers a variety of premium gourmet teas, a most welcomed hostess gift or gift for tea lovers PRESENTATION BOX tea sampler has 20 assorted pyramid tea bag infusers, handcrafted to allow the delicate leaves to luxuriantly unfurl in hot water, producing a deliciously aromatic, flavorful cup WRAPPED IN ELEGANT, embossed pattern gift box with a satin ribbon, open the lid to reveal a tea tasting menu with blend descriptions
+          </p>
+        </div>
+        <div
+          class="card-footer"
+        >
+          <button
+            class="btn btn-primary btn-sm"
+            style="margin: 3px;"
+            type="button"
+          />
+          <button
+            class="btn btn-primary btn-sm"
+            type="button"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

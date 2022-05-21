@@ -1,0 +1,373 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1`] = `
+<DocumentFragment>
+  <div>
+    <h2
+      style="margin-top: 15px; margin-bottom: 0px;"
+    >
+      TeaTime Help Page
+    </h2>
+    <img
+      alt="coffee mug"
+      src="https://bycooper.com/wp-content/uploads/2021/03/white-glossy-mug-11oz-handle-on-left-6056aa04aae9a.png"
+      style="height: 200px;"
+    />
+    <div>
+      <div
+        class="container"
+        style="border: 2px;"
+      >
+        <ul
+          class="mb-3 nav nav-tabs"
+          role="tablist"
+        >
+          <li
+            class="nav-item"
+            role="presentation"
+          >
+            <button
+              aria-controls="help_page_tab-tabpane-whatIsTeaTime"
+              aria-selected="true"
+              class="nav-link active"
+              data-rr-ui-event-key="whatIsTeaTime"
+              id="help_page_tab-tab-whatIsTeaTime"
+              role="tab"
+              type="button"
+            >
+              What is TeaTime?
+            </button>
+          </li>
+          <li
+            class="nav-item"
+            role="presentation"
+          >
+            <button
+              aria-controls="help_page_tab-tabpane-gettingStarted"
+              class="nav-link"
+              data-rr-ui-event-key="gettingStarted"
+              id="help_page_tab-tab-gettingStarted"
+              role="tab"
+              tabindex="-1"
+              type="button"
+            >
+              Getting Started
+            </button>
+          </li>
+          <li
+            class="nav-item"
+            role="presentation"
+          >
+            <button
+              aria-controls="help_page_tab-tabpane-myTeas"
+              class="nav-link"
+              data-rr-ui-event-key="myTeas"
+              id="help_page_tab-tab-myTeas"
+              role="tab"
+              tabindex="-1"
+              type="button"
+            >
+              Track Your Teas
+            </button>
+          </li>
+          <li
+            class="nav-item"
+            role="presentation"
+          >
+            <button
+              aria-controls="help_page_tab-tabpane-discover"
+              class="nav-link"
+              data-rr-ui-event-key="discover"
+              id="help_page_tab-tab-discover"
+              role="tab"
+              tabindex="-1"
+              type="button"
+            >
+              Finding New Teas
+            </button>
+          </li>
+          <li
+            class="nav-item"
+            role="presentation"
+          >
+            <button
+              aria-controls="help_page_tab-tabpane-wishList"
+              class="nav-link"
+              data-rr-ui-event-key="wishList"
+              id="help_page_tab-tab-wishList"
+              role="tab"
+              tabindex="-1"
+              type="button"
+            >
+              Wishlist
+            </button>
+          </li>
+          <li
+            class="nav-item"
+            role="presentation"
+          >
+            <button
+              aria-controls="help_page_tab-tabpane-About"
+              class="nav-link"
+              data-rr-ui-event-key="About"
+              id="help_page_tab-tab-About"
+              role="tab"
+              tabindex="-1"
+              type="button"
+            >
+              About the Developer
+            </button>
+          </li>
+        </ul>
+        <div
+          class="tab-content"
+        >
+          <div
+            aria-labelledby="help_page_tab-tab-whatIsTeaTime"
+            class="fade tab-pane active show"
+            id="help_page_tab-tabpane-whatIsTeaTime"
+            role="tabpanel"
+          >
+            <p>
+              <i>
+                The Tea Application you've long been waiting for...
+              </i>
+               
+            </p>
+            <ul
+              style="text-align: left;"
+            >
+              <li>
+                TeaTime is the nexus for all your tea adventures.
+              </li>
+              <li>
+                Αfter creating your own personal account, you can keep track of your teas, browse a huge database of to discover new teas, and construct your very own wishlist!
+              </li>
+              <br />
+              <li>
+                <b>
+                  Tech details:
+                </b>
+                 On a more technical note, TeaTime is a full stack application consisting of an Express/Node.js backend and a React Frontend. API calls are made to the Express backend, with full CRUD capabilities on a PSQL database. API calls are also made to the external API, Spoonacular. The frontend was polished with React-Bootstrap.
+              </li>
+            </ul>
+          </div>
+          <div
+            aria-labelledby="help_page_tab-tab-gettingStarted"
+            class="fade tab-pane"
+            id="help_page_tab-tabpane-gettingStarted"
+            role="tabpanel"
+          >
+            <ul
+              style="text-align: left;"
+            >
+              <li>
+                When first entering the TeaTime application, you have two options: 
+                <b>
+                  Signup
+                </b>
+                 and 
+                <b>
+                  Login
+                </b>
+              </li>
+              <br />
+              <li>
+                <b>
+                  Login
+                </b>
+                 - If you already have an account, select login and enter your username and password.
+              </li>
+              <li>
+                <b>
+                  Signup
+                </b>
+                 - If you do not have an account... select signup button. Now, enter your details.
+              </li>
+              <br />
+              <li>
+                "Will my password be safe?" - Yes. TeaTime will take your password and 
+                <i>
+                  encrypt
+                </i>
+                 it, never exposing it to sneaky cyber attacks. 
+              </li>
+              <br />
+              <li>
+                <b>
+                  Local Storage
+                </b>
+                 - Did your cat accidentaly close your browser window? It would be a nuisance to have to enter your login details again. Fear not, your account details will be stored on local storage so you only need to access the site again and you will be automatically logged in.
+              </li>
+              <li>
+                <b>
+                  Profile
+                </b>
+                 - If you ever want to revist your account details, simply click the profile button on the navigation bar at the top of your page.
+              </li>
+              <li>
+                <b>
+                  Data
+                </b>
+                 - all of your tea data will be stored on an external database and will not be lost when you refresh the page, or access the website from a friend's house. That being said, we promise not to sell your data (unless someone offers a great price).
+              </li>
+            </ul>
+          </div>
+          <div
+            aria-labelledby="help_page_tab-tab-myTeas"
+            class="fade tab-pane"
+            id="help_page_tab-tabpane-myTeas"
+            role="tabpanel"
+          >
+            <ul
+              style="text-align: left;"
+            >
+              <li>
+                One of the amazing features of TeaTime is the ability to track all the teas that you currently own.
+              </li>
+              <li>
+                Click on the 
+                <b>
+                  My Teas
+                </b>
+                 tab, to access the page.
+              </li>
+              <br />
+              <li>
+                <b>
+                  Add Tea
+                </b>
+                 - The button labeled 'Add New Tea' allows you to manually enter details of the tea that you own.
+              </li>
+              <li>
+                <b>
+                  Add to Wishlist
+                </b>
+                 - Each tea can be removed from the My Teas list and added to the Wishlist by simply clicking on the "move to wishlist" button.
+              </li>
+              <li>
+                <b>
+                  Delete Tea
+                </b>
+                 - Conversely, you may delete any tea on this page, by simply pressing the button.
+              </li>
+              <li>
+                <b>
+                  Tea Details
+                </b>
+                 - Want more details on a particular tea? Just click on it. You will be sent to a page built just for that tea.
+              </li>
+              <li>
+                <b>
+                  Edit Tea
+                </b>
+                 - Once you are on a Tea detail page, you can edit the information.
+              </li>
+            </ul>
+          </div>
+          <div
+            aria-labelledby="help_page_tab-tab-discover"
+            class="fade tab-pane"
+            id="help_page_tab-tabpane-discover"
+            role="tabpanel"
+          >
+            <ul
+              style="text-align: left;"
+            >
+              <li>
+                TeaTime gives users the option to discover new teas by searching a huge database. You can even add teas to your Wishlist or MyTeas.
+              </li>
+              <li>
+                Click on the 
+                <b>
+                  Discover
+                </b>
+                 tab, to access the page.
+              </li>
+              <br />
+              <li>
+                <b>
+                  Search
+                </b>
+                 - You are greeted by a large search bar. Simply type in any tea you are interested in, and click the blue search button.
+              </li>
+              <li>
+                <b>
+                  Spoonacular
+                </b>
+                 - With some help from our friends over at Spoonacular, you can look through their 
+                <i>
+                  massive
+                </i>
+                 database of teas.
+              </li>
+              <li>
+                <b>
+                  Add to Wishlist
+                </b>
+                 - Found a tea that you are interested in? Click to add it to your wishlist.
+              </li>
+              <li>
+                <b>
+                  Add to My Teas
+                </b>
+                 - Do you already own this tea? Add it to My Tea list directly by pressing the button.
+              </li>
+            </ul>
+          </div>
+          <div
+            aria-labelledby="help_page_tab-tab-wishList"
+            class="fade tab-pane"
+            id="help_page_tab-tabpane-wishList"
+            role="tabpanel"
+          >
+            <ul
+              style="text-align: left;"
+            >
+              <li>
+                With TeaTime, you can store teas you hope to one day own!
+              </li>
+              <li>
+                Click on the 
+                <b>
+                  Wishlist
+                </b>
+                 tab, to access the page.
+              </li>
+              <br />
+              <li>
+                <b>
+                  Add to My Teas
+                </b>
+                 - Once you purchase the tea, simply click the button to switch it over to your My Teas list.
+              </li>
+              <li>
+                <b>
+                  Delete Tea
+                </b>
+                 - Not interested in this tea anymore? You may delete any tea on this page, by simply pressing the button.
+              </li>
+            </ul>
+          </div>
+          <div
+            aria-labelledby="help_page_tab-tab-About"
+            class="fade tab-pane"
+            id="help_page_tab-tabpane-About"
+            role="tabpanel"
+          >
+            <p>
+              My name is Alexander, and I'm just your friendly neighborhood developer.
+            </p>
+            <p>
+              <b>
+                Contact me:
+              </b>
+               alexanderaboutanos@gmail.com
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

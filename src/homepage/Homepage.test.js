@@ -6,6 +6,16 @@ import { MemoryRouter } from "react-router";
 import Homepage from "./Homepage";
 import { UserProvider } from "../testUtils";
 
+it("renders without crashing", function () {
+  render(
+    <MemoryRouter>
+      <UserProvider>
+        <Homepage />
+      </UserProvider>
+    </MemoryRouter>
+  );
+});
+
 it("matches snapshot", function () {
   const { asFragment } = render(
     <MemoryRouter>

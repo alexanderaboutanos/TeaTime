@@ -2,13 +2,14 @@
 
 import React from "react";
 import { render } from "@testing-library/react";
-import LoginForm from "./LoginForm";
 import { MemoryRouter } from "react-router";
+import EditTea from "./EditTea";
+import { UserProvider } from "../testUtils";
 
 it("renders without crashing", function () {
   render(
     <MemoryRouter>
-      <LoginForm />
+      <EditTea />
     </MemoryRouter>
   );
 });
@@ -16,7 +17,7 @@ it("renders without crashing", function () {
 it("matches snapshot", function () {
   const { asFragment } = render(
     <MemoryRouter>
-      <LoginForm />
+      <EditTea />
     </MemoryRouter>
   );
   expect(asFragment()).toMatchSnapshot();

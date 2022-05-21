@@ -2,22 +2,15 @@
 
 import React from "react";
 import { render } from "@testing-library/react";
-import LoginForm from "./LoginForm";
 import { MemoryRouter } from "react-router";
+import HelpPage from "./HelpPage";
+import { UserProvider } from "../testUtils";
 
 it("renders without crashing", function () {
-  render(
-    <MemoryRouter>
-      <LoginForm />
-    </MemoryRouter>
-  );
+  render(<HelpPage />);
 });
 
 it("matches snapshot", function () {
-  const { asFragment } = render(
-    <MemoryRouter>
-      <LoginForm />
-    </MemoryRouter>
-  );
+  const { asFragment } = render(<HelpPage />);
   expect(asFragment()).toMatchSnapshot();
 });

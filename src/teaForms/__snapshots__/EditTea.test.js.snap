@@ -1,0 +1,238 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="Edit"
+  >
+    <div
+      class="container"
+    >
+      <h2
+        class="mb-3"
+        style="margin: 20px;"
+      >
+        Edit your tea
+      </h2>
+      <p>
+        <i>
+          Please adjust the tea information below
+        </i>
+      </p>
+      <div
+        class="card"
+      >
+        <div
+          class="card-body"
+        >
+          <form>
+            <div
+              class="form-group row"
+              style="margin: 5px;"
+            >
+              <label
+                class="col-sm-2 col-form-label"
+              >
+                Title:
+              </label>
+              <div
+                class="col-sm-4"
+              >
+                <input
+                  class="form-control"
+                  name="title"
+                  placeholder="required"
+                  value=""
+                />
+              </div>
+            </div>
+            <div
+              class="form-group row"
+              style="margin: 5px;"
+            >
+              <label
+                class="col-sm-2 col-form-label"
+              >
+                Brand:
+              </label>
+              <div
+                class="col-sm-4"
+              >
+                <input
+                  class="form-control"
+                  name="brand"
+                  placeholder="required"
+                  value=""
+                />
+              </div>
+            </div>
+            <div
+              class="form-group row"
+              style="margin: 5px;"
+            >
+              <label
+                class="col-sm-2 col-form-label"
+              >
+                Description:
+              </label>
+              <div
+                class="col-sm-10"
+              >
+                <input
+                  class="form-control"
+                  name="description"
+                  placeholder="required"
+                  value=""
+                />
+              </div>
+            </div>
+            <div
+              class="form-group row"
+              style="margin: 5px;"
+            >
+              <label
+                class="col-sm-2 col-form-label"
+              >
+                Category:
+              </label>
+              <div
+                class="col-sm-4"
+              >
+                <input
+                  class="form-control"
+                  name="category"
+                  placeholder="Black, Green, Oolong, etc."
+                  value=""
+                />
+              </div>
+            </div>
+            <div
+              class="form-group row"
+              style="margin: 5px;"
+            >
+              <label
+                class="col-sm-2 col-form-label"
+              >
+                Country of Origin:
+              </label>
+              <div
+                class="col-sm-4"
+              >
+                <input
+                  class="form-control"
+                  name="country_of_origin"
+                  value=""
+                />
+              </div>
+            </div>
+            <div
+              class="form-group row"
+              style="margin: 5px;"
+            >
+              <label
+                class="col-sm-2 col-form-label"
+              >
+                Review:
+              </label>
+              <div
+                class="col-sm-10"
+              >
+                <input
+                  class="form-control"
+                  name="review"
+                  value=""
+                />
+              </div>
+            </div>
+            <div
+              class="form-group row"
+              style="margin: 5px;"
+            >
+              <label
+                class="col-sm-2 col-form-label"
+              >
+                Link to image of tea:
+              </label>
+              <div
+                class="col-sm-10"
+              >
+                <input
+                  class="form-control"
+                  name="img_url"
+                  type="text"
+                  value=""
+                />
+              </div>
+            </div>
+            <div
+              class="form-group row"
+              style="margin: 5px;"
+            >
+              <label
+                class="col-sm-2 col-form-label"
+              >
+                Brew Time (min):
+              </label>
+              <div
+                class="col-sm-2"
+              >
+                <input
+                  class="form-control"
+                  name="brew_time"
+                  type="number"
+                  value=""
+                />
+              </div>
+            </div>
+            <div
+              class="form-group row"
+              style="margin: 5px;"
+            >
+              <label
+                class="col-sm-2 col-form-label"
+              >
+                Brew Temp (°F):
+              </label>
+              <div
+                class="col-sm-2"
+              >
+                <input
+                  class="form-control"
+                  name="brew_temp"
+                  type="number"
+                  value=""
+                />
+              </div>
+            </div>
+            <div
+              class="form-group row"
+              style="margin: 5px;"
+            >
+              <label
+                class="col-sm-2 col-form-label"
+              >
+                Organic Tea?
+              </label>
+              <div
+                class="col-sm-1"
+              >
+                <input
+                  name="organic"
+                  type="checkbox"
+                  value="false"
+                />
+              </div>
+            </div>
+            <button
+              class="btn btn-primary btn-lg"
+              type="submit"
+            >
+              Edit Your Tea!
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
