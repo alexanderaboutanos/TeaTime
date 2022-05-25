@@ -156,7 +156,7 @@ const HelpPage = () => {
                 </li>
               </ul>
             </Tab>
-            <Tab eventKey="wishList" title="Wishlist">
+            <Tab eventKey="wishList" title="The Wishlist">
               <ul style={{ textAlign: "left" }}>
                 <li>
                   With TeaTime, you can store teas you hope to one day own!

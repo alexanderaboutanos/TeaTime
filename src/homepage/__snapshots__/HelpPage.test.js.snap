@@ -99,7 +99,7 @@ exports[`matches snapshot 1`] = `
               tabindex="-1"
               type="button"
             >
-              Wishlist
+              The Wishlist
             </button>
           </li>
           <li
