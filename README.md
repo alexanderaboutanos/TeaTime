@@ -2,18 +2,84 @@
 
 # TeaTime
 
-The Tea Application you've long been waiting for...
+Introducing the tea app you've long been waiting for...
 
-LINK: tea-time.surge.sh
+[OPEN APPLICATION](tea-time.surge.sh)
+
+---
+
+## What is TeaTime?
+
+### TO THE USER
+
+- the nexus for all your tea adventures.
+- create your own personal account
+- keep track of your teas
+- browse a huge database and discover new teas
+- construct your very own wishlist
+- etc...
+
+### TO THE TECHIE
+
+- TeaTime is a fully functional and tested application consisting of a backend and frontend.
+- **Backend**: Express/Node.js
+- **Frontend**: React & Bootstrap
+- **Database**: PostgreSQL database in the cloud (Heroku)
+- **API**:
+  - Internal calls: to the Express backend, with full CRUD capabilities.
+  - External calls: to the external API, [Spoonacular](https://spoonacular.com/food-api).
+- **Deployment**:
+  - Backend - Heroku
+  - Frontend - Surge
 
 ---
 
-### What is TeaTime?
+## Images
 
-- TeaTime is the nexus for all your tea adventures. Αfter creating your own personal account, you can keep track of your teas, browse a huge database of to discover new teas, and construct your very own wishlist!
-- Tech details: On a more technical note, TeaTime is a full stack application consisting of an Express/Node.js backend and a React Frontend. API calls are made to the Express backend, with full CRUD capabilities on a PSQL database. API calls are also made to the external API, Spoonacular. The frontend was polished with React-Bootstrap.
+![Alt text](./public/screenshot_teatime.png "home")
+![Alt text](./public/screenshot2_teatime.png "wishlist")
 
 ---
+
+## Database Schema
+
+![Alt text](./public/database_schema.png "database")
+
+---
+
+## TeaTime Backend
+
+- Deployed to an entirely separate Github repo
+- [LINK to Repo](https://github.com/alexanderaboutanos/TeaTime-backend)
+- [LINK to Backend URL](https://teatime-backend.herokuapp.com/)
+
+---
+
+## Testing
+
+- **Testing Framework:** [Jest](https://jestjs.io/)
+- backend: in the terminal, type: `jest`
+- frontend: in the terminal, type: `npm test`
+
+- **Includes**:
+  - smoke tests
+  - snapshot tests
+  - integration tests
+  - unit tests
+  - end to end tests
+
+---
+
+## About the Developer
+
+- My name is Alexander, and I'm just your friendly neighborhood developer.
+
+- Contact me:
+  - **EMAIL:** alexanderaboutanos@gmail.com
+  - **LinkedIn**: [Alexander Aboutanos](https://www.linkedin.com/in/alexander-aboutanos/)
+- ***
+
+## HOW TO USE THIS APPLICATION:
 
 ### Getting Started
 
@@ -65,26 +131,4 @@ LINK: tea-time.surge.sh
 
 ---
 
-### About the Developer
-
-- My name is Alexander, and I'm just your friendly neighborhood developer.
-
-- Contact me: alexanderaboutanos@gmail.com
-
----
-
-### Testing
-
-- the backend and frontend of this project incorporates basic tesing usng jest.
-- test backend: in the terminal, type: `jest`
-- test frontend: in the terminal, type: `npm test`
-
----
-
-### API
-
-- this project uses the Spoonacular API, a database of food. A link to this API is here: https://spoonacular.com/food-api.
-
----
-
-Enjoy your tea!
+Enjoy your tea and brew on!
