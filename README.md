@@ -4,7 +4,7 @@
 
 Introducing the tea app you've long been waiting for...
 
-[OPEN APPLICATION](tea-time.surge.sh)
+[OPEN APPLICATION](https://tea-time.surge.sh)
 
 ---
 
